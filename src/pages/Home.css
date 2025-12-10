@@ -1,0 +1,386 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 4rem 2rem;
+    width: 100%;
+}
+
+/* SECTION 1 - Hero */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 100vw;
+    /* Force viewport width */
+    margin-left: calc(-50vw + 50%);
+    /* Factor in scrollbar if needed, but simple full width usually enough if parent is full */
+    margin-right: calc(-50vw + 50%);
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Opaque dark overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-headline {
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subheadline {
+    font-size: 1.25rem;
+    color: #f0f0f0;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.two-col {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+}
+
+.primary-cta {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.primary-cta:hover {
+    background-color: #3d8b40;
+}
+
+.secondary-cta {
+    background-color: var(--accent-color);
+    color: var(--text-primary);
+}
+
+.secondary-cta:hover {
+    background-color: #e6b43f;
+}
+
+/* Removed hero-image-container as it is now a background */
+
+/* SECTION 2 - Why This Matters */
+.highlight-section {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background-color: var(--bg-light);
+    /* Full width background requires breaking out of container or wrapping section inner */
+}
+
+/* Fix for full width bg */
+.home-container>section:nth-child(even) {
+    background-color: var(--bg-light);
+    width: 100%;
+}
+
+.home-container>section:nth-child(even)>* {
+    max-width: 1200px;
+    /* Constrain content */
+    margin: 0 auto;
+}
+
+/* Wait, the implementation above wraps content inside section directly.
+   To have full width bg, I should apply bg to section, and ensure section width is 100%
+   But max-width prevents it. 
+   I will change section CSS to not have max-width, but inner container. 
+*/
+/* Re-doing section styles slightly for full width */
+.home-container>section {
+    width: 100%;
+    padding: 4rem 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-container>section>* {
+    /* Direct children are content wrappers */
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Specific overrides for flex layouts */
+/* Hero is handled separately */
+
+
+.highlight-text {
+    flex: 1;
+}
+
+.highlight-text h2 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.highlight-image-container {
+    flex: 1;
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SECTION 3 - Features */
+.features-section h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid var(--primary-color);
+    text-align: center;
+}
+
+.feature-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* SECTION 4 - Programs */
+.programs-preview {
+    gap: 3rem;
+    align-items: center;
+}
+
+.programs-content {
+    flex: 1;
+}
+
+.programs-content h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.programs-content ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.programs-content li {
+    margin-bottom: 0.5rem;
+}
+
+.programs-image-container {
+    flex: 1;
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.programs-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* SECTION 5 - Impact */
+.impact-preview {
+    text-align: center;
+    background-color: var(--secondary-color) !important;
+    color: white;
+}
+
+.impact-preview h2 {
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.impact-stats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* SECTION 6 - Testimonials */
+.testimonials-section {
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.testimonial-card {
+    background: #fff;
+    padding: 2rem;
+    border-left: 4px solid var(--accent-color);
+    font-style: italic;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    /* Added shadow for lift */
+    display: flex;
+    /* Flex to align author at bottom if needed, or just block */
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    /* Easier to read quotes aligned left usually, but centered is ok too. Left is safer for longer text. */
+}
+
+.testimonial-author {
+    display: block;
+    margin-top: 1.5rem;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    text-align: right;
+    /* Sign off looks good on right or left */
+}
+
+/* CTA Footer */
+.cta-footer-section {
+    text-align: center;
+    background-color: var(--bg-light) !important;
+}
+
+.cta-footer-section h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.cta-footer-section p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.cta-footer-section .hero-buttons {
+    justify-content: center;
+}
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+
+    .hero-section {
+        text-align: center;
+    }
+
+    .two-col {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-headline {
+        font-size: 2.5rem;
+    }
+
+    .impact-stats {
+        gap: 2rem;
+    }
+}

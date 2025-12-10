@@ -1,0 +1,368 @@
+/* For Families Page Styles */
+.families-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.families-container section {
+    width: 100%;
+    padding: 4rem 2rem;
+}
+
+/* SECTION 1 - Banner */
+.families-banner {
+    height: 350px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.families-banner .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 61, 124, 0.7);
+    /* Light blue overlay */
+    z-index: 1;
+}
+
+.families-banner .banner-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.families-banner h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.families-banner p {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+/* SECTION 2 - Who Can Join */
+.join-section {
+    background: white;
+}
+
+.two-col-join {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.join-text {
+    flex: 1;
+}
+
+.join-text h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+}
+
+.join-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.highlight-text {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+.join-image {
+    flex: 1;
+    height: 350px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.join-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SECTION 3 - Practices */
+.practices-section {
+    background-color: var(--bg-light);
+    text-align: center;
+}
+
+.practices-section h2 {
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
+    font-size: 2.2rem;
+}
+
+.practices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.practice-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.practice-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.practice-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* SECTION 4 - Accessibility */
+.accessibility-section {
+    background-color: rgba(76, 175, 80, 0.1);
+    /* Light green */
+}
+
+.accessibility-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--secondary-color);
+    font-size: 2.2rem;
+}
+
+.accessibility-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.access-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+.access-icon {
+    font-size: 2rem;
+}
+
+.access-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* SECTION 5 - Transportation */
+.transport-families-section {
+    background-color: #e3f2fd;
+    /* Calm blue */
+}
+
+.two-col-transport {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.transport-icon-large {
+    font-size: 6rem;
+}
+
+.transport-text h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.transport-text p {
+    font-size: 1.15rem;
+    margin-bottom: 1rem;
+}
+
+/* SECTION 6 - Cost & Reg */
+.cost-section {
+    text-align: center;
+    background: white;
+}
+
+.cost-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.free-price {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+.cost-block {
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #eee;
+}
+
+.register-block h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.register-block p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+/* SECTION 7 - Testimonials */
+.family-testimonials {
+    background-color: var(--bg-light);
+    text-align: center;
+}
+
+.family-testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.family-quote-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    border-top: 4px solid var(--accent-color);
+    font-style: italic;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.family-quote-card .author {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--text-secondary);
+}
+
+/* SECTION 8 - FAQs */
+.faq-section {
+    background: white;
+}
+
+.faq-container {
+    max-width: 800px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.faq-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.faq-item:hover {
+    border-color: var(--primary-color);
+}
+
+.faq-question {
+    padding: 1.2rem;
+    background: #f9f9f9;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-toggle {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1.2rem;
+    background: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 200px;
+    /* Arbitrary enough height */
+    padding: 1.2rem;
+    padding-top: 0;
+}
+
+/* SECTION 9 - CTA */
+.families-cta-footer {
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.families-cta-footer h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.families-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    .two-col-join,
+    .two-col-transport {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .join-image {
+        width: 100%;
+        height: 250px;
+        order: -1;
+    }
+
+    .transport-icon-large {
+        font-size: 4rem;
+    }
+}

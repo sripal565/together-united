@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title desc">
+  <title id="title">Together United Soccer Club Logo</title>
+  <desc id="desc">
+    Two stylized human figures in motion passing a soccer ball within a protective circular emblem, 
+    representing inclusive, adaptive soccer for teens with intellectual and developmental disabilities.
+  </desc>
+
+  <!-- Color defs -->
+  <defs>
+    <style type="text/css">
+      .tu-blue { fill: #1A3D7C; }
+      .tu-blue-stroke { stroke: #1A3D7C; }
+      .tu-green { fill: #4CAF50; }
+      .tu-green-stroke { stroke: #4CAF50; }
+      .tu-yellow { fill: #FFC947; }
+      .tu-yellow-stroke { stroke: #FFC947; }
+    </style>
+  </defs>
+
+  <!-- Outer shield / community circle -->
+  <circle cx="100" cy="100" r="88" fill="#FFFFFF" stroke="#1A3D7C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></circle>
+
+  <!-- Inner soft ring suggesting protection and unity -->
+  <circle cx="100" cy="100" r="70" fill="none" stroke="#4CAF50" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 8"></circle>
+
+  <!-- Passing arc / shared movement line behind figures -->
+  <path d="M50 115
+           Q100 70 150 115" fill="none" stroke="#1A3D7C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.15"></path>
+
+  <!-- LEFT FIGURE: deep blue body, supportive stance -->
+  <!-- Head -->
+  <circle cx="70" cy="70" r="11" fill="#FFC947" stroke="#1A3D7C" stroke-width="3"></circle>
+
+  <!-- Torso -->
+  <path d="M70 82
+           Q60 95 62 110
+           Q64 123 70 128
+           Q76 123 78 110
+           Q80 95 70 82Z" fill="#1A3D7C"></path>
+
+  <!-- Left figure arms (reaching toward ball, supportive arc) -->
+  <path d="M60 92
+           Q55 100 55 110" fill="none" stroke="#1A3D7C" stroke-width="5" stroke-linecap="round"></path>
+
+  <path d="M80 92
+           Q90 92 100 95" fill="none" stroke="#1A3D7C" stroke-width="5" stroke-linecap="round"></path>
+
+  <!-- Left figure legs (slight bend = adaptive stance) -->
+  <path d="M70 128
+           Q65 140 62 152" fill="none" stroke="#4CAF50" stroke-width="6" stroke-linecap="round"></path>
+
+  <path d="M70 128
+           Q75 140 78 150" fill="none" stroke="#4CAF50" stroke-width="6" stroke-linecap="round"></path>
+
+  <!-- RIGHT FIGURE: green body, slightly different posture to represent diverse abilities -->
+  <!-- Head (same size, mirrored placement for equality) -->
+  <circle cx="130" cy="70" r="11" fill="#FFC947" stroke="#1A3D7C" stroke-width="3"></circle>
+
+  <!-- Torso (more upright, subtle variation) -->
+  <path d="M130 82
+           Q122 96 124 110
+           Q126 124 130 129
+           Q134 124 136 110
+           Q138 96 130 82Z" fill="#4CAF50"></path>
+
+  <!-- Right figure arms (mirroring pass) -->
+  <path d="M120 92
+           Q110 92 100 95" fill="none" stroke="#4CAF50" stroke-width="5" stroke-linecap="round"></path>
+
+  <path d="M140 92
+           Q145 100 145 110" fill="none" stroke="#4CAF50" stroke-width="5" stroke-linecap="round"></path>
+
+  <!-- Right figure legs (one extended, one bent – different but equally strong stance) -->
+  <path d="M130 129
+           Q126 142 124 152" fill="none" stroke="#1A3D7C" stroke-width="6" stroke-linecap="round"></path>
+
+  <path d="M130 129
+           Q137 138 142 150" fill="none" stroke="#1A3D7C" stroke-width="6" stroke-linecap="round"></path>
+
+  <!-- Stylized soccer ball (central, shared, not overpowering) -->
+  <circle cx="100" cy="95" r="10" fill="#FFFFFF" stroke="#1A3D7C" stroke-width="3"></circle>
+
+  <!-- Simple flat pattern on the ball -->
+  <path d="M95 93
+           L100 88
+           L105 93
+           L103 99
+           L97 99Z" fill="#1A3D7C" opacity="0.9"></path>
+
+  <path d="M100 88
+           Q100 83 104 82" fill="none" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" opacity="0.9"></path>
+
+  <path d="M95 93
+           Q90 93 88 98" fill="none" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" opacity="0.9"></path>
+
+  <path d="M105 93
+           Q110 93 112 98" fill="none" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" opacity="0.9"></path>
+
+  <path d="M97 99
+           Q100 103 103 99" fill="none" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" opacity="0.9"></path>
+
+  <!-- Subtle ground hint to add stability and movement without feeling intense -->
+  <path d="M60 158
+           Q100 165 140 158" fill="none" stroke="#1A3D7C" stroke-width="3" stroke-linecap="round" opacity="0.25"></path>
+</svg>

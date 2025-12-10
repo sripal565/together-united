@@ -1,0 +1,225 @@
+/* Volunteer Page Styles */
+.volunteer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.volunteer-container section {
+    width: 100%;
+    padding: 4rem 2rem;
+}
+
+/* Banner */
+.volunteer-banner {
+    height: 350px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.volunteer-banner .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 61, 124, 0.7);
+    /* Deep Blue overlay */
+    z-index: 1;
+}
+
+.volunteer-banner .banner-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.volunteer-banner h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.volunteer-banner p {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+/* Intro */
+.volunteer-intro {
+    background: white;
+    text-align: center;
+}
+
+.intro-lead {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--text-primary);
+}
+
+/* Roles */
+.volunteer-roles {
+    background-color: var(--bg-light);
+}
+
+.volunteer-roles h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+.roles-grid {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.roles-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.roles-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.roles-list li::before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+.roles-note {
+    background: #e3f2fd;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+/* Training */
+.training-section {
+    background: var(--secondary-color);
+    color: white;
+    text-align: center;
+}
+
+.training-box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.training-box h2 {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.training-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.training-tags span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1.05rem;
+}
+
+/* Who/Why Volunteer */
+.who-volunteer {
+    background: white;
+}
+
+.two-col-volunteer {
+    display: flex;
+    gap: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.volunteer-col {
+    flex: 1;
+}
+
+.volunteer-col h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.volunteer-col ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.impact-statement {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+/* CTA */
+.volunteer-cta {
+    text-align: center;
+    background-color: var(--bg-light);
+}
+
+.volunteer-cta h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.cta-button:hover {
+    background: #388e3c;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .two-col-volunteer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

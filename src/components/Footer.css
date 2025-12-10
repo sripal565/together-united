@@ -1,0 +1,83 @@
+.footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 3rem 1rem;
+    text-align: center;
+    margin-top: auto;
+    /* Push to bottom if content is short */
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.footer-quote {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: #e0e0e0;
+}
+
+.footer-cta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-btn {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.join-btn {
+    color: #fff;
+}
+
+.join-btn:hover {
+    color: var(--primary-color);
+}
+
+.donate-btn {
+    color: var(--accent-color);
+}
+
+.donate-btn:hover {
+    color: #ffd56b;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    .footer-quote {
+        font-size: 1.2rem;
+    }
+
+    .footer-cta {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

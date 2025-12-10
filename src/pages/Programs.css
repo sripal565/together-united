@@ -1,0 +1,194 @@
+/* Programs Page Styles */
+.programs-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.programs-container section {
+    width: 100%;
+    padding: 4rem 2rem;
+}
+
+/* Banner */
+.programs-banner {
+    height: 350px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.programs-banner .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.programs-banner .banner-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.programs-banner h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.programs-banner p {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+/* Intro */
+.programs-intro {
+    background: white;
+    text-align: center;
+}
+
+.intro-lead {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+    color: var(--text-primary);
+}
+
+/* Practice Structure */
+.practice-structure {
+    background-color: var(--bg-light);
+}
+
+.practice-structure h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+}
+
+.structure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.structure-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid var(--primary-color);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.structure-card h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.structure-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.structure-card li {
+    position: relative;
+    padding-left: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.structure-card li::before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.card-note {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-top: 1rem;
+}
+
+/* Season Schedule */
+.season-schedule {
+    background: var(--secondary-color);
+    color: white;
+    text-align: center;
+}
+
+.schedule-box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.schedule-box h2 {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.schedule-box p {
+    font-size: 1.2rem;
+}
+
+/* Unique Features */
+.unique-features {
+    background: white;
+    text-align: center;
+}
+
+.unique-features h2 {
+    color: var(--secondary-color);
+    margin-bottom: 2.5rem;
+    font-size: 2.2rem;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+    background: var(--bg-light);
+    border-radius: 8px;
+}
+
+.check-icon {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
